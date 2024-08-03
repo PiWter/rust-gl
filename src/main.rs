@@ -9,7 +9,7 @@ fn main() {
     unsafe{
         let mut glfw = glfw::init(glfw::fail_on_errors).unwrap();
 
-        let (mut window, events) = glfw.create_window(700, 700, "Triángulo",  glfw::WindowMode::Windowed) //Windowed    glfwGetPrimaryMonitor(), NULL     glfw::WindowMode::FullScreen(glfwGetPrimaryMonitor())
+        let (mut window, events) = glfw.create_window(700, 700, "Triángulo",  glfw::WindowMode::Windowed) //glfw::WindowMode::FullScreen()
         .expect("Failed to create GLFW window.");
 
         window.make_current();
